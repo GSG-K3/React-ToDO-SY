@@ -16,6 +16,22 @@
   max-width: 100%;
 }
 
+.task-check {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.task-text {
+  flex: 0 0 auto;
+  width: 400px;
+  max-width: none;
+  word-wrap: break-word;
+}
+
+.task-btn {
+  flex: 0 0 22.333333%;
+  max-width: 22.333333%;
+}
 .task-list {
   max-width: 70%;
   min-width: 35%;
@@ -39,7 +55,7 @@
   border-bottom: none;
 }
 
-.task-list ul li div {
+.task-container {
   display: flex;
   justify-content: space-between;
 }
@@ -52,8 +68,12 @@
   border: 1px solid transparent;
   font-size: 16px;
   border-radius: 4px;
+  margin: 0 6px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
 .btn-red {
   color: #ffffff;
   background-color: #dc3545;
@@ -64,4 +84,9 @@
   color: #ffffff;
   background-color: #007bff;
   border-color: #007bff;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
 }
